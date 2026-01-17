@@ -1,7 +1,4 @@
 import { Elysia } from "elysia";
-import { drizzleClient } from "~/db";
+import { db } from "~/db";
 
-export const db = new Elysia({ name: "@[database]" }).decorate(
-  "db",
-  drizzleClient
-);
+export const database = new Elysia({ name: "@[database]" }).decorate("db", db);

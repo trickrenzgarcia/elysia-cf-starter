@@ -2,6 +2,7 @@ import { Elysia } from "elysia";
 import { CloudflareAdapter } from "elysia/adapter/cloudflare-worker";
 import { cors } from "@elysiajs/cors";
 import { openapi } from "@elysiajs/openapi";
+import { database } from "./ctx/database";
 import { betterAuth } from "~/ctx/better-auth";
 import { OpenAPI } from "./lib/auth";
 
@@ -17,6 +18,7 @@ export default new Elysia({
     })
   )
   .use(betterAuth)
+  .use(database)
   .use(
     openapi({
       documentation: {

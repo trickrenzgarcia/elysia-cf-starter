@@ -12,8 +12,3 @@ const client = createClient({
 export const drizzleClient = drizzle(client, {
   schema,
 });
-
-export const db = new Elysia({ name: "@[database]" }).decorate(
-  "db",
-  drizzleClient
-);

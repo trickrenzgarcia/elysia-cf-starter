@@ -1,2 +1,3 @@
-DATABASE_URL="db.libsql.com/your-database-url"
-DATABASE_AUTH_TOKEN="your-database-auth-token"
+DATABASE_URL=db.libsql.com/your-database-url
+DATABASE_AUTH_TOKEN=your-database-auth-token
+BETTER_AUTH_SECRET=your-auth-secret-token

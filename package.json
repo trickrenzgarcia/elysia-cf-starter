@@ -12,6 +12,9 @@
   "scripts": {
     "dev": "wrangler dev --local",
     "deploy": "wrangler deploy --minify",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
     "cf-types": "wrangler types"
   },
   "devDependencies": {

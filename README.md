@@ -137,4 +137,4 @@ bun run deploy
 
 ## 📄 License
 
-MIT
+[MIT](https://github.com/trickrenzgarcia/elysia-cf-starter/blob/master/LICENSE)

@@ -11,3 +11,5 @@ node_modules/
 .dev.vars
 .test.vars
 .prod.vars
+
+worker-configuration.d.ts
